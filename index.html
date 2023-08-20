@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recita Biblia</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>RECITA BIBLIA</h1>
+
+      <nav class="barra-de-pesquisa">
+        <label for="livrosBiblia">Selecione o livro:</label>
+        <select id="livrosBiblia">
+          <option value="" selected disabled>...</option>
+          <option value="gn">Gênesis</option>
+          <option value="ex">Êxodo</option>
+          <option value="lv">Levítico</option>
+          <option value="nm">Números</option>
+          <option value="dt">Deuteronômio</option>
+          <option value="js">Josué</option>
+          <option value="jz">Juízes</option>
+          <option value="rt">Rute</option>
+          <option value="1sm">1 Samuel</option>
+          <option value="2sm">2 Samuel</option>
+          <option value="1rs">1 Reis</option>
+          <option value="2rs">2 Reis</option>
+          <option value="1cr">1 Crônicas</option>
+          <option value="2cr">2 Crônicas</option>
+          <option value="ed">Esdras</option>
+          <option value="ne">Neemias</option>
+          <option value="et">Ester</option>
+          <option value="jó">Jó</option>
+          <option value="sl">Salmos</option>
+          <option value="pv">Provérbios</option>
+          <option value="ec">Eclesiastes</option>
+          <option value="ct">Cânticos dos Cânticos</option>
+          <option value="is">Isaías</option>
+          <option value="jr">Jeremias</option>
+          <option value="lm">Lamentações de Jeremias</option>
+          <option value="ez">Ezequiel</option>
+          <option value="dn">Daniel</option>
+          <option value="os">Oséias</option>
+          <option value="jl">Joel</option>
+          <option value="am">Amós</option>
+          <option value="ob">Obadias</option>
+          <option value="jn">Jonas</option>
+          <option value="mq">Miquéias</option>
+          <option value="na">Naum</option>
+          <option value="hc">Habacuque</option>
+          <option value="sf">Sofonias</option>
+          <option value="ag">Ageu</option>
+          <option value="zc">Zacarias</option>
+          <option value="ml">Malaquias</option>
+          <option value="mt">Mateus</option>
+          <option value="mc">Marcos</option>
+          <option value="lc">Lucas</option>
+          <option value="jo">João</option>
+          <option value="at">Atos</option>
+          <option value="rm">Romanos</option>
+          <option value="1co">1 Coríntios</option>
+          <option value="2co">2 Coríntios</option>
+          <option value="gl">Gálatas</option>
+          <option value="ef">Efésios</option>
+          <option value="fp">Filipenses</option>
+          <option value="cl">Colossenses</option>
+          <option value="1ts">1 Tessalonicenses</option>
+          <option value="2ts">2 Tessalonicenses</option>
+          <option value="1tm">1 Timóteo</option>
+          <option value="2tm">2 Timóteo</option>
+          <option value="tt">Tito</option>
+          <option value="fm">Filemom</option>
+          <option value="hb">Hebreus</option>
+          <option value="tg">Tiago</option>
+          <option value="1pe">1 Pedro</option>
+          <option value="2pe">2 Pedro</option>
+          <option value="1jo">1 João</option>
+          <option value="2jo">2 João</option>
+          <option value="3jo">3 João</option>
+          <option value="jd">Judas</option>
+          <option value="ap">Apocalipse</option>
+        </select>
+
+        <label for="cap">Selecione o Capitulo:</label>
+        <select id="cap"></select>
+
+        <label for="time">Selecione o tempo de espera</label>
+        <select id="time">
+          <option value="1">1s</option>
+          <option value="2">2s</option>
+          <option value="3">3s</option>
+          <option value="4">4s</option>
+          <option value="5">5s</option>
+          <option value="6">6s</option>
+          <option value="7">7s</option>
+          <option value="8">8s</option>
+          <option value="9">9s</option>
+          <option value="10" selected>10s</option>
+          <option value="11">11s</option>
+          <option value="12">12s</option>
+          <option value="13">13s</option>
+          <option value="14">14s</option>
+          <option value="15">15s</option>
+        </select>
+
+        <button class="search">
+          <i class="fa-solid fa-magnifying-glass"></i> <span>Recitar</span>
+        </button>
+      </nav>
+
+      <p class="introducao">
+        Bem-vindo à nossa inovadora aplicação web de memorização de versículos
+        bíblicos! Imagine uma ferramenta que combina a tradição milenar da
+        leitura e estudo da Bíblia com a tecnologia moderna para criar uma
+        experiência envolvente e eficaz de aprendizado. Nossa aplicação foi
+        projetada com um propósito claro: ajudar você a memorizar e internalizar
+        os preciosos versículos da Bíblia de maneira profunda e significativa.
+        Com um design simples e intuitivo, a aplicação oferece uma abordagem
+        única para a memorização, combinando elementos visuais e auditivos para
+        maximizar o seu aprendizado. Aqui está como funciona: ao acessar o
+        aplicativo, você terá a liberdade de escolher qualquer livro da Bíblia
+        e, em seguida, selecionar o capítulo que deseja memorizar
+        <strong
+          >(CASO OS CAPITULOS NÃO APAREÇAM ESPERE UM POUCO QUE O SITEMA ESTA
+          BUSCANDO)</strong
+        >
+        . Com um simples clique no ícone da lupa, você será levado a uma tela
+        dedicada, onde cada versículo do livro/capítulo escolhido será
+        apresentado de forma clara e legível. Agora, aqui vem a parte especial:
+        ao tocar no botão "START", você ouvirá o versículo sendo lido em uma
+        narração suave e clara. Essa abordagem auditiva é comprovada como uma
+        maneira eficaz de absorver informações e reter o conhecimento por meio
+        da repetição. E aqui está o toque genial: após a leitura de cada
+        versículo, você escutará um suave sino e então ira iniciar uma contagem
+        e você tera 10 segundos ou o tempo de espera que você selecionou
+        previamente para recitar o versículo em voz alta. Isso não apenas
+        fortalece a sua memorização, mas também a sua compreensão e conexão com
+        as palavras sagradas. E o melhor? Assim que o tempo se esgotar, o
+        próximo versículo será automaticamente apresentado e lido, mantendo um
+        ritmo de aprendizado constante e envolvente. O processo de repetição,
+        audição, leitura em voz alta e teste proporciona uma abordagem
+        abrangente e eficaz para a memorização dos versículos. Nossa aplicação
+        visa não apenas ajudá-lo a memorizar os versículos, mas também a
+        compreender profundamente o seu significado e aplicação em sua vida
+        diária. Acreditamos que a combinação de elementos visuais, auditivos e
+        práticos é a chave para transformar o aprendizado em uma jornada
+        inspiradora e edificante. Comece hoje mesmo a explorar a riqueza dos
+        ensinamentos bíblicos de maneira totalmente nova. Estamos empolgados
+        para acompanhá-lo em sua jornada de memorização e conexão com as
+        palavras da Bíblia. Seja abençoado enquanto mergulha nesta experiência
+        única de aprendizado espiritual.
+      </p>
+    </header>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
