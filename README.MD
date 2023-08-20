@@ -1,4 +1,4 @@
-<h1 align="center"> Music_Preview </h1>
+<h1 align="center"> RECITA_BIBLIA </h1>
 
 <p align="center">
 Bem-vindo à nossa inovadora aplicação web de memorização de versículos bíblicos! Imagine uma ferramenta que combina a tradição milenar da leitura e estudo da Bíblia com a tecnologia moderna para criar uma experiência envolvente e eficaz de aprendizado. Nossa aplicação foi projetada com um propósito claro: ajudar você a memorizar e internalizar os preciosos versículos da Bíblia de maneira profunda e significativa. Com um design simples e intuitivo, a aplicação oferece uma abordagem única para a memorização, combinando elementos visuais e auditivos para maximizar o seu aprendizado.

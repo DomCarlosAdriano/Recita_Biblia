@@ -11,7 +11,7 @@ const fetchChapters = async (book) => {
 };
 
 const fetchVerses = async (book, cap) => {
-  const resposta = await fetch(`${url}/verses/nvi/${book}/${cap}`);
+  const resposta = await fetch(`${url}/verses/ra/${book}/${cap}`);
   return resposta.json();
 };
 

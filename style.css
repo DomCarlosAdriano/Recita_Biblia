@@ -177,4 +177,8 @@ header h1 {
   .control {
     width: 90%;
   }
+
+  .conteiner {
+    padding-bottom: 5rem;
+  }
 }

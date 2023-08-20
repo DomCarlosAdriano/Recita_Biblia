@@ -9,7 +9,7 @@ const audio = new Audio("./audio/sino.mp3");
 
 let contadorVersos = 0;
 let timeWait = Number(localStorage.getItem("time"));
-console.log(typeof timeWait);
+
 let currentTime = 0;
 
 const inserirVersos = (arrayVersos) => {
@@ -44,7 +44,6 @@ const leitor = () => {
           currentTime = 0;
           time.innerText = "0";
 
-          console.log("fim");
           leitor();
         }
       }, 1000);
@@ -52,12 +51,9 @@ const leitor = () => {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+play.addEventListener("click", () => {
   const data = JSON.parse(localStorage.getItem("data"));
   inserirVersos(data);
-});
-
-play.addEventListener("click", () => {
   back.style.display = "inline-block";
   play.style.display = "none";
   leitor();
