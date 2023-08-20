@@ -18,7 +18,7 @@ Bem-vindo à nossa inovadora aplicação web de memorização de versículos bí
 <br>
 
 <p align="center">
-  <img alt="preview website" src="" width="100%">
+  <img alt="preview website" src="https://github.com/DomCarlosAdriano/Recita_Biblia/blob/master/.github/recitaBiblia.png?raw=true" width="100%">
 </p>
 
 ## 🚀 Tecnologias
